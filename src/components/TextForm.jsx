@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 export default function TextForm(props) {
 
-    const [text, setText] = useState("Enter Text Here..");
+    const [text, setText] = useState("");
 
     const myStyle = {
         "height": "250px"
