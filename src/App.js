@@ -4,7 +4,7 @@ import TextForm from "./components/TextForm";
 function App() {
   return (
     <>
-      <Navbar title="TextApp" aboutText="About This App" />
+      <Navbar title="WordCon" aboutText="About This App" />
       <hr />
       <div className="container">
         <TextForm heading="Enter The Text Below" />
