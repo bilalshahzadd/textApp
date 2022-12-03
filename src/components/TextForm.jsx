@@ -22,10 +22,9 @@ export default function TextForm(props) {
         setText('');
     }
 
-    const handleCopy = () => {
-        navigator.clipboard.writeText(text.value)
+    const copyContent = async () => {
+        await navigator.clipboard.writeText(text);
     }
-
     return (
         <>
             <div className="all">
@@ -43,7 +42,7 @@ export default function TextForm(props) {
                                 </div>
                                 <div className="btnContainer">
                                     <button className="btn" onClick={handleClear}>Clear Text</button>
-                                    <button className="btn" onClick={handleCopy}>Copy Text</button>
+                                    <button className="btn" onClick={copyContent}>Copy Text</button>
                                 </div>
                             </div>
                         </div>
