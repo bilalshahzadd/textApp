@@ -22,26 +22,39 @@ export default function TextForm(props) {
         setText('');
     }
 
+    const handleCopy = () => {
+        navigator.clipboard.writeText(text.value)
+    }
+
     return (
         <>
-            <div className='section'>
-                <div className='container'>
-                    <h1>Enter Text Below</h1>
-                    <div>
+            <div className="all">
+                <div className='section'>
+                    <div className='container'>
+                        <h1>Enter Text Below</h1>
                         <div>
-                            <textarea value={text} onChange={handleOnChange} rows={8}></textarea>
+                            <div>
+                                <textarea className="textarea" value={text} onChange={handleOnChange} rows={8}></textarea>
+                            </div>
+                            <div className="buttons">
+                                <div className="btnContainer">
+                                    <button className="btn" onClick={handleUpperCase}>Convert to Uppercase</button>
+                                    <button className="btn" onClick={handleLowerCase}>Convert to Lowercase</button>
+                                </div>
+                                <div className="btnContainer">
+                                    <button className="btn" onClick={handleClear}>Clear Text</button>
+                                    <button className="btn" onClick={handleCopy}>Copy Text</button>
+                                </div>
+                            </div>
                         </div>
-                        <button className="btn btn-primary my-2" onClick={handleUpperCase}>Convert to Uppercase</button>
-                        <button className="btn btn-primary my-2 mx-2" onClick={handleLowerCase}>Convert to Lowercase</button>
-                        <button className="btn btn-primary my-2" onClick={handleClear}>Clear Text</button>
                     </div>
-                </div>
-                <div className="container">
-                    <h1 className="heading">Your Text Contain:</h1>
-                    <p className="details">{text.length} Characters and {text.split(' ').length} Words</p>
-                    <p className="details">{0.008 * text.split(' ').length} Minutes to Read</p>
-                    <h1 className="heading">Preview</h1>
-                <p>{text}</p>
+                    <div className="container">
+                        <h1 className="heading">Your Text Contain:</h1>
+                        <p className="details">{text.length} Characters and {text.split(' ').length} Words</p>
+                        <p className="details">{0.008 * text.split(' ').length} Minutes to Read</p>
+                        <h1 className="heading">Preview</h1>
+                        <p>{text}</p>
+                    </div>
                 </div>
             </div>
         </>
