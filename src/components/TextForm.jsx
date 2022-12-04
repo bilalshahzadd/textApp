@@ -19,6 +19,9 @@ export default function TextForm(props) {
 
     const handleOnChange = (event) => {
         setText(event.target.value);
+        setCopyText({
+            visibility: "hidden"
+        })
     }
 
     const handleClear = () => {
