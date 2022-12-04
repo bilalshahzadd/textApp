@@ -142,6 +142,19 @@ body {
     border-radius: 0.5rem;
     color: #7bf763;
   }
+
+  #myLinks {
+    margin-top: 20px;
+    border: 2px solid #7bf763;
+    border-radius: 0.5rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #myLinks li {
+    list-style: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {

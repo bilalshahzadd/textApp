@@ -1,8 +1,25 @@
 import React from 'react'
+import { useState } from 'react';
 import DarkLight from './DarkLight';
 
 
 export default function Nav() {
+
+    const [style, setStyle] = useState({
+        display: 'none'
+    })
+
+    const toggleMenu = () => {
+        if (style.display === 'none') {
+            setStyle({
+                display: 'block'
+            })
+        } else {
+            setStyle({
+                display: 'none'
+            })
+        }
+    }
 
     return (
         <>
@@ -19,9 +36,15 @@ export default function Nav() {
 
             <header className="mobileHeader">
                 <h1 className="mobileTitle">TextApp</h1>
-                <button className="fa-solid fa-bars"></button>
+                <button className="fa-solid fa-bars" onClick={toggleMenu}></button>
             </header>
 
+            <div id="myLinks" style={style}>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                </ul>
+            </div>
         </>
     )
 }
