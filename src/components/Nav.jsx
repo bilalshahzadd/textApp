@@ -3,9 +3,10 @@ import DarkLight from './DarkLight';
 
 
 export default function Nav() {
+
     return (
         <>
-            <header>
+            <header className="header">
                 <h1 className="title">TextApp</h1>
                 <nav>
                     <ul>
@@ -15,6 +16,11 @@ export default function Nav() {
                 </nav>
                 <DarkLight className="toggle" />
             </header>
+
+            <header className="mobileHeader">
+                <h1 className="mobileTitle">TextApp</h1>
+            </header>
+
         </>
     )
 }

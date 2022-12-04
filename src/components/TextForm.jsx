@@ -5,6 +5,10 @@ export default function TextForm(props) {
 
     const [text, setText] = useState("");
 
+    const [copyText, setCopyText] = useState({
+        visibility: "hidden"
+    });
+
     const handleUpperCase = () => {
         setText(text.toUpperCase());
     }
@@ -23,6 +27,9 @@ export default function TextForm(props) {
 
     const copyContent = () => {
         navigator.clipboard.writeText(text);
+        setCopyText({
+            visibility: 'visible'
+        })
     }
 
     return (
@@ -44,6 +51,7 @@ export default function TextForm(props) {
                                     <button className="btn" onClick={handleClear}>Clear Text</button>
                                     <button className="btn" onClick={copyContent}>Copy Text</button>
                                 </div>
+                                <p style={copyText}>Text Copied!</p>
                             </div>
                         </div>
                     </div>
