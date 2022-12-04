@@ -31,7 +31,7 @@ export default function Nav() {
                         <li>About</li>
                     </ul>
                 </nav>
-                <DarkLight className="toggle" />
+                <DarkLight />
             </header>
 
             <header className="mobileHeader">
@@ -42,8 +42,12 @@ export default function Nav() {
             <div id="myLinks" style={style}>
                 <ul>
                     <li>Home</li>
+                    <div className="divider"></div>
                     <li>About</li>
+                    <div className="divider"></div>
+                    <DarkLight />
                 </ul>
+
             </div>
         </>
     )

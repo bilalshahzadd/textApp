@@ -57,7 +57,7 @@ export default function TextForm(props) {
                                 <div className="btnContainer">
                                     <button className="btn" onClick={handleClear}>Clear Text</button>
                                     <button className="btn" onClick={copyContent}>Copy Text</button>
-                                    <button className="btn" onClick={formatText}>Format</button>
+                                    <button className="btn" onClick={formatText}>Remove Extra Spaces</button>
                                 </div>
                                 <p style={copyText}>Text Copied!</p>
                             </div>

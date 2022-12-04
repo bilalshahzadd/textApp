@@ -3,20 +3,26 @@ import { useState } from 'react';
 
 export default function DarkLight(props) {
 
-    const [btnText, setBtnText] = useState("Toggle Light Mode")
+    const [btnText, setBtnText] = useState("Enable Light Theme")
 
     const toggleDarkMode = () => {
         document.body.classList.toggle("light-mode");
-        if (btnText === "Toggle Light Mode") {
-            setBtnText("Toggle Dark Mode");
+        if (btnText === "Enable Light Theme") {
+            setBtnText("Enable Dark Theme");
         } else {
-            setBtnText("Toggle Light Mode");
+            setBtnText("Enable Light Theme");
         }
     }
 
     return (
         <>
-            <button className={props.className} onClick={toggleDarkMode}>{btnText}</button>
+            <div className="switchTheme">
+                <label class="switch">
+                    <input type="checkbox" onClick={toggleDarkMode} />
+                    <span class="slider"></span>
+                </label>
+                <p>{btnText}</p>
+            </div>
         </>
     )
 }
