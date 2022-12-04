@@ -22,9 +22,10 @@ export default function TextForm(props) {
         setText('');
     }
 
-    const copyContent = async () => {
-        await navigator.clipboard.writeText(text);
+    const copyContent = () => {
+        navigator.clipboard.writeText(text);
     }
+
     return (
         <>
             <div className="all">
