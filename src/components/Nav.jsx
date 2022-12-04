@@ -24,18 +24,20 @@ export default function Nav() {
     return (
         <>
             <header className="header">
-                <h1 className="title">TextApp</h1>
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                    </ul>
-                </nav>
+                <div className="identity">
+                    <h1 className="title">Word Counter</h1>
+                    <nav>
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                        </ul>
+                    </nav>
+                </div>
                 <DarkLight />
             </header>
 
             <header className="mobileHeader">
-                <h1 className="mobileTitle">TextApp</h1>
+                <h1 className="mobileTitle">Word Counter</h1>
                 <button className="fa-solid fa-bars" onClick={toggleMenu}></button>
             </header>
 

@@ -65,7 +65,7 @@ export default function TextForm(props) {
                     </div>
                     <div className="container">
                         <h1 className="heading">Your Text Contain:</h1>
-                        <p className="details">{text.length} Characters and {text.split(' ').length} Words</p>
+                        <p className="details">{text.trim() === '' ? 0 : text.match(/\S+/g).length} words and {text.replace(/\s+/g, '').length} characters</p>
                         <p className="details">{0.008 * text.split(' ').length} Minutes to Read</p>
                         <h1 className="heading">Preview</h1>
                         <p>{text.length > 0 ? text : "Enter something to preview here"}</p>

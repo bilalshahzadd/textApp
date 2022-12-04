@@ -13,7 +13,7 @@ body {
 .header {
   margin-top: 20px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   border: 2px solid #7bf763;
   width: 90%;
@@ -29,6 +29,11 @@ body {
 
 .header ul li {
   list-style: none;
+}
+
+.header .identity {
+  display: flex;
+  align-items: center;
 }
 
 .mobileHeader {
