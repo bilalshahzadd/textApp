@@ -7,7 +7,7 @@ export default function DarkLight(props) {
 
     const toggleDarkMode = () => {
         document.body.classList.toggle("light-mode");
-        if (btnText == "Toggle Light Mode") {
+        if (btnText === "Toggle Light Mode") {
             setBtnText("Toggle Dark Mode");
         } else {
             setBtnText("Toggle Light Mode");
