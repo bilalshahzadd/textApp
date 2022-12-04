@@ -47,7 +47,6 @@ export default function Nav() {
                     <div className="divider"></div>
                     <DarkLight />
                 </ul>
-
             </div>
         </>
     )

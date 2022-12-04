@@ -84,31 +84,31 @@ body {
   border-radius: 0.5rem;
 }
 
-.light-mode header {
+.light header {
   border: 2px solid #041545;
   color: #041545;
 }
 
-.light-mode .toggle {
+.light .toggle {
   border: 2px solid #041545;
   color: #041545;
 }
 
-.light-mode {
+.light {
   background-color: rgb(202, 202, 202);
   color: #041545;
 }
 
-.light-mode .container {
+.light .container {
   border: 2px solid #041545;
 }
 
-.light-mode .textarea {
+.light .textarea {
   border: 2px solid #041545;
   color: #041545;
 }
 
-.light-mode .btn {
+.light .btn {
   border: 2px solid #041545;
   color: #041545;
 }
@@ -208,6 +208,13 @@ input:checked+.slider:before {
     background-color: #7bf763;
   }
 
+  .light .divider {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    height: 1px;
+    background-color: #041545;
+  }
+
   #myLinks li {
     list-style: none;
   }
@@ -240,7 +247,7 @@ input:checked+.slider:before {
   }
 
   .textarea {
-    width: 250px;
+    width: 268px;
   }
 
   .btnContainer {
