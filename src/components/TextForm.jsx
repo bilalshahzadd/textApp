@@ -35,6 +35,10 @@ export default function TextForm(props) {
         })
     }
 
+    const formatText = () => {
+        setText(text.split(/[ ]+/).join(" "));
+    }
+
     return (
         <>
             <div className="all">
@@ -53,6 +57,7 @@ export default function TextForm(props) {
                                 <div className="btnContainer">
                                     <button className="btn" onClick={handleClear}>Clear Text</button>
                                     <button className="btn" onClick={copyContent}>Copy Text</button>
+                                    <button className="btn" onClick={formatText}>Format</button>
                                 </div>
                                 <p style={copyText}>Text Copied!</p>
                             </div>
