@@ -1,24 +1,14 @@
 import React from 'react'
 
-export default function DarkLight() {
+export default function DarkLight(props) {
 
     const toggleDarkMode = () => {
-        document.body.classList.toggle("dark-mode");
+        document.body.classList.toggle("light-mode");
     }
 
     return (
         <>
-            <div class="daynight">
-                <label for="checkbox">
-                    <input type="checkbox" name="" id="checkbox" onClick={toggleDarkMode}/>
-                        <div class="toggle">
-                            <div class="cloud"></div>
-                            <div class="star"></div>
-                            <div class="sea"></div>
-                            <div class="mountains"></div>
-                        </div>
-                </label>
-            </div>
+            <button className={props.className} onClick={toggleDarkMode}>Dark/Light</button>
         </>
     )
 }
