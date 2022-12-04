@@ -19,6 +19,7 @@ export default function Nav() {
 
             <header className="mobileHeader">
                 <h1 className="mobileTitle">TextApp</h1>
+                <button className="fa-solid fa-bars"></button>
             </header>
 
         </>
