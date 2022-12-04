@@ -142,9 +142,10 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: rgb(202, 202, 202);
   -webkit-transition: .4s;
   transition: .4s;
+  border-radius: 0.5rem;
 }
 
 .slider:before {
@@ -157,6 +158,7 @@ body {
   background-color: #7bf763;
   -webkit-transition: .4s;
   transition: .4s;
+  border-radius: 0.5rem;
 }
 
 input:checked+.slider {
