@@ -35,6 +35,9 @@ export default function Nav() {
                             <li>
                                 <Link to="/About" className="link">About</Link>
                             </li>
+                            <li>
+                                <a href="https://github.com/bilalshahzadd/textApp" className="link">Source Code</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
