@@ -10,11 +10,6 @@ export default function Nav() {
         display: 'none'
     })
 
-    const [linkStyle, setLinkStyle] = useState({
-        color: "#7bf763",
-        textDecoration: "none"
-    })
-
     const toggleMenu = () => {
         if (style.display === 'none') {
             setStyle({
