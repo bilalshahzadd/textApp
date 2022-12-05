@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
 
+/* GLOBAL STYLING */
+
 * {
   font-family: Roboto Mono;
   font-weight: 400;
@@ -9,6 +11,8 @@ body {
   background-color: #041545;
   color: #7bf763;
 }
+
+/* HEADER STYLING */
 
 .header {
   margin-top: 20px;
@@ -39,6 +43,13 @@ body {
 .mobileHeader {
   display: none;
 }
+
+.link {
+  color: #7bf763;
+  text-decoration: none;
+}
+
+/* SECTIONS AND CONTAINER STYLING */
 
 .section {
   margin-top: 50px;
@@ -80,47 +91,23 @@ body {
   cursor: pointer;
 }
 
-.toggle {
-  background-color: #00000000;
+.about {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutContent {
   border: 2px solid #7bf763;
-  padding: 10px 50px;
-  color: #7bf763;
-  cursor: pointer;
+  padding: 20px;
   border-radius: 0.5rem;
 }
 
-.light header {
-  border: 2px solid #041545;
-  color: #041545;
-}
-
-.light .toggle {
-  border: 2px solid #041545;
-  color: #041545;
-}
-
-.light {
-  background-color: rgb(202, 202, 202);
-  color: #041545;
-}
-
-.light .container {
-  border: 2px solid #041545;
-}
-
-.light .textarea {
-  border: 2px solid #041545;
-  color: #041545;
-}
-
-.light .btn {
-  border: 2px solid #041545;
-  color: #041545;
-}
-
-#tooltipBox {
-  border: 2px solid #7bf763;
-}
+/* THEME TOGGLE BUTTON STYLING */
 
 .switch {
   position: relative;
@@ -181,6 +168,49 @@ input:checked+.slider:before {
   gap: 20px;
 }
 
+/*****
+
+LIGHT THEME STYLING
+
+*****/
+
+.light .aboutContent {
+  border: 2px solid #041545;
+}
+
+.light .link {
+  color: #041545;
+  text-decoration: none;
+}
+
+.light header {
+  border: 2px solid #041545;
+  color: #041545;
+}
+
+.light .toggle {
+  border: 2px solid #041545;
+  color: #041545;
+}
+
+.light {
+  background-color: rgb(202, 202, 202);
+  color: #041545;
+}
+
+.light .container {
+  border: 2px solid #041545;
+}
+
+.light .textarea {
+  border: 2px solid #041545;
+  color: #041545;
+}
+
+.light .btn {
+  border: 2px solid #041545;
+  color: #041545;
+}
 
 @media screen and (max-width:768px) {
 
@@ -224,22 +254,6 @@ input:checked+.slider:before {
 
   #myLinks li {
     list-style: none;
-  }
-
-  .toggle {
-    margin-top: 5px;
-    padding: 5px 30px 5px 30px;
-  }
-
-}
-
-@media only screen and (max-width: 600px) {
-
-  .all {
-    position: unset;
-    top: 0%;
-    left: 0%;
-    transform: translate(0%, 0%);
   }
 
   .section {

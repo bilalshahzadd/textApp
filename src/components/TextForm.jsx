@@ -44,7 +44,7 @@ export default function TextForm(props) {
             <div className="all">
                 <div className='section'>
                     <div className='container'>
-                        <h1>Enter Text Below</h1>
+                        <h1>{props.heading}</h1>
                         <div>
                             <div>
                                 <textarea className="textarea" value={text} onChange={handleOnChange} rows={8}></textarea>

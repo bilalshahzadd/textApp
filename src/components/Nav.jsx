@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import DarkLight from './DarkLight';
 
 
@@ -7,6 +8,11 @@ export default function Nav() {
 
     const [style, setStyle] = useState({
         display: 'none'
+    })
+
+    const [linkStyle, setLinkStyle] = useState({
+        color: "#7bf763",
+        textDecoration: "none"
     })
 
     const toggleMenu = () => {
@@ -25,11 +31,15 @@ export default function Nav() {
         <>
             <header className="header">
                 <div className="identity">
-                    <h1 className="title">Word Counter</h1>
+                    <Link to="/" className="link"><h1 className="title">Word Counter</h1></Link>
                     <nav>
                         <ul>
-                            <li>Home</li>
-                            <li>About</li>
+                            <li>
+                                <Link to="/" className="link">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/About" className="link">About</Link>
+                            </li>
                         </ul>
                     </nav>
                 </div>
