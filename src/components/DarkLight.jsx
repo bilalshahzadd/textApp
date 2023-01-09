@@ -17,9 +17,9 @@ export default function DarkLight(props) {
     return (
         <>
             <div className="switchTheme">
-                <label class="switch">
+                <label className="switch">
                     <input type="checkbox" onClick={toggleDarkMode} />
-                    <span class="slider"></span>
+                    <span className="slider"></span>
                 </label>
                 <p>{btnText}</p>
             </div>
